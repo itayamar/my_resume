@@ -1,0 +1,64 @@
+/********************************
+GENERAL
+*********************************/
+
+html,body{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#wrapper{
+    /*min-height: 100%;*/
+    max-width: 940px;
+    margin: 0 auto -6rem;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/********************************
+HEADING
+*********************************/
+header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100% ;
+}
+
+#user-name {
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    font-family: "Lucida Grande", "Helvetica Nueue", Arial, sans-serif;
+    margin: 15px 0;
+    font-size: 1.75em;
+    font-weight: normal;
+    line-height: 0.8em;
+}
+/********************************
+FOOTER
+*********************************/
+
+footer{
+    height: 4em;
+    background-color: #c8adda;
+    border-radius: 30px;
+    border: 5px;
+    padding: 1em;
+    margin: 5%;
+}
