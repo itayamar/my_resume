@@ -11,11 +11,11 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#wrapper{
-    /*min-height: 100%;*/
+.wrapper{
+    min-height: 320px;
     max-width: 940px;
     margin: 0 auto -6rem;
-    height: auto;
+    height: 95%;
 }
 
 a {
@@ -44,21 +44,56 @@ header {
 }
 
 h1{
-    font-family: "Lucida Grande", "Helvetica Nueue", Arial, sans-serif;
+    font-family: 'Changa One', sans-serif; /*english*/
+    /*font-family: 'Tinos', Arial, serif; /!*hebrew*!/*/
     margin: 15px 0;
     font-size: 1.75em;
     font-weight: normal;
     line-height: 0.8em;
 }
+
+
+
+/********************************
+NAVIGATION
+*********************************/
+nav {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0 12px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a{
+    font-weight: 800;
+    padding: 15px 10px;
+}
+
 /********************************
 FOOTER
 *********************************/
 
 footer{
-    height: 4em;
+    text-align: center;
+    height: auto;
     background-color: #c8adda;
     border-radius: 30px;
     border: 5px;
     padding: 1em;
-    margin: 5%;
+    margin: 20px 5px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
 }

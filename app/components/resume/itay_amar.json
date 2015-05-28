@@ -1,0 +1,21 @@
+{
+  "name": "Itay Amar",
+  "image": "img/itay_amar.jpg",
+  "dateOfBirth": "14/7/1988",
+  "address": "Shimon Dahan 27, Tiberias",
+  "phone": ["0523127699", "0777520074"],
+  "id": "200581668",
+  "email": "itayamar@gmail.com",
+  "miscellaneous": "Full command of English and Hebrew (native language).Ability to high-level organization and management, high standards of performance, very good interpersonal communication, serious and ambitious.",
+  "education": [{"years": "2007-2011", "studied": "(B.sc) Computer science major software ", "where": "Tel-Hai academic collage"},
+    {"years": "2002-2006", "studied": "Full matriculation major computers", "where": "Ort Tiberias"}],
+  "projects": [{"name": "Software engineer", "description": "car renting system" , "development": "Characterization and complete requirements document using UML diagram in Visio. Writing software code in C#."},
+    {"name": "Java project", "descripion": "Customer support system, throw a message about the computer who had the problem, and directing it to the right sector to treat it", "development": "Writing the software code in java using Eclipse."}],
+  "progLang": "C, C++, SQL, Java, JavaScript, PHP, HTML, JQeury, RT(לימודים באמצעות Vxworks), AngularJS.",
+  "familiarLang": "XML, C#, Joomla",
+  "military": {"years": "2011-2013", "description": "Serving at the Bakum aka Bsis Klita UMiyun lit. Reception and Sorting Base"},
+  "experience":[{"years": "2009-2011", "description": "private teacher in computers, math and English"},
+    {"years": "2013-2014", "description": "Promoting the sales of various products"}],
+  "volunteer": [{"years": "2010-2011", "where": "Volunteering in sachlab project", "description": "Help children in school "},
+    {"years": "2008-2010", "where": "Volunteering in perach project", "description": "helping a child whit learning and personal difficulties "}]
+}
