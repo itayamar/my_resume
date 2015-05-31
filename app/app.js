@@ -7,7 +7,8 @@ var myApp=angular.module('myApp', [
   'myApp.education',
   'myApp.experience',
   'myApp.resumeServices',
-  'myApp.version'
+  //'myApp.directive',
+  //'myApp.version'
 ]);
 
 myApp.config(['$routeProvider', function($routeProvider) {
@@ -37,3 +38,12 @@ myApp.controller('MainController',['$scope','$log', '$location' ,'Resume', funct
         return false;
     };
 }]);
+
+myApp.directive('nameResume',[
+    function(){
+        return {
+            restrict: 'AE',
+            template: '<h1 id="user-name">{{resume.name}} resume </h1>'
+        };
+    }
+]);

@@ -10,11 +10,4 @@ angular.module('myApp.education', ['ngRoute'])
 }])
 
 .controller('EducationCtrl', ['$scope', 'Resume', function($scope,Resume) {
-      Resume.get().$promise.then(function(result){
-            $scope.resume=result;
-          },
-          function(err) {
-            $log.error(err);
-          }
-      );
 }]);

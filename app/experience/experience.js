@@ -11,12 +11,5 @@ angular.module('myApp.experience', ['ngRoute'])
             controller: 'ExperienceCtrl'
         });
     }])
-    .controller('ExperienceCtrl', ['$scope', 'Resume', function($scope,Resume) {
-        Resume.get().$promise.then(function(result){
-                $scope.resume=result;
-            },
-            function(err) {
-                $log.error(err);
-            }
-        );
+    .controller('ExperienceCtrl', ['$scope', function($scope) {
     }]);
