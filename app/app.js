@@ -7,7 +7,7 @@ var myApp=angular.module('myApp', [
   'myApp.education',
   'myApp.experience',
   'myApp.resumeServices',
-  //'myApp.directive',
+  'myApp.resumeDirectives'
   //'myApp.version'
 ]);
 
@@ -39,11 +39,11 @@ myApp.controller('MainController',['$scope','$log', '$location' ,'Resume', funct
     };
 }]);
 
-myApp.directive('nameResume',[
-    function(){
-        return {
-            restrict: 'AE',
-            template: '<h1 id="user-name">{{resume.name}} resume </h1>'
-        };
-    }
-]);
+//myApp.directive('nameResume',[
+//    function(){
+//        return {
+//            restrict: 'AE',
+//            template: '<h1 id="user-name">{{resume.name}} resume </h1>'
+//        };
+//    }
+//]);
