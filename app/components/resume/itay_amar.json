@@ -10,7 +10,7 @@
   "educations": [{"years": "2007-2011", "studied": "(B.sc) Computer science major software ", "where": "Tel-Hai academic collage"},
     {"years": "2002-2006", "studied": "Full matriculation major computers", "where": "Ort Tiberias"}],
   "projects": [{"name": "Software engineer", "description": "car renting system" , "development": "Characterization and complete requirements document using UML diagram in Visio. Writing software code in C#."},
-    {"name": "Java project", "descripion": "Customer support system, throw a message about the computer who had the problem, and directing it to the right sector to treat it", "development": "Writing the software code in java using Eclipse."}],
+    {"name": "Java", "description": "Customer support system, throw a message about the computer who had the problem, and directing it to the right sector to treat it", "development": "Writing the software code in java using Eclipse."}],
   "progLang": "C, C++, SQL, Java, JavaScript, PHP, HTML, JQeury, RT(Using Vxworks), AngularJS.",
   "familiarLang": "XML, C#, Joomla",
   "military_service": [{"years": "2011-2013", "description": "Serving at the Bakum aka Bsis Klita UMiyun lit. Reception and Sorting Base"}],

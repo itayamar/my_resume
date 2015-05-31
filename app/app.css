@@ -20,6 +20,11 @@ ul {
     max-width: 940px;
     margin: 0 auto -5rem;
     height: 97%;
+    font-size: 0.9rem;
+}
+
+dt{
+    text-indent: 3em;
 }
 
 a {
@@ -95,17 +100,57 @@ PAGE ABOUT/PERSONAL_DETAILS
     -moz-border-radius: 20%;
     border-radius: 20%;
 }
+.personal_details dd {
+    margin-left: 5em;
+}
 
+.personal_details dd a{
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+dd.phones a{
+    background-image: url('img/phone.png');
+}
+
+dd.emails a{
+    background-image: url('img/mail.png')
+}
 /********************************
 PAGE EDUCATION
 *********************************/
+.education li span {
+    display: block;
+    margin-left: 2em;
+}
 
+.education dd{
+    margin-left: 5em;
+}
 
 
 /********************************
 PAGE  EXPERIENCE
 *********************************/
 
+.experience li span{
+    float: left;
+    margin-left: 2em;
+    display: block;
+}
+
+.experience dd{
+    display: block;
+    margin-left: 5em;
+}
+
+.experience dt span{
+    margin-left: 2.8em;
+}
 
 
 /********************************
@@ -144,8 +189,13 @@ header {
     background-color: BurlyWood;
 }
 strong{
-    color: #5575da;
+    color: #6b5bff;
 }
+
+b {
+    color: #4c56ff;
+}
+
 a {
     color: DimGray;
 }
