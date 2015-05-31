@@ -4,7 +4,7 @@ angular.module('myApp.resumeServices', ['ngResource'])
     function($resource){
         //return $resource('..resume/:name.json');
         return $resource('components/resume/itay_amar.json', {}, {
-            'query':{method:'GET', isArray: true}
+            'get':{method:'GET'}
         });
     }
 ]);
