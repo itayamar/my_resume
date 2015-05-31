@@ -1,0 +1,17 @@
+<section class="personal_details">
+    <img id="profile-img" src="{{resume.imageUrl}}" alt="{{resume.name}} Profile picture"/>
+    <p><span><strong>ID:</strong></span>{{resume.id}}</p>
+    <p><span><strong>Date of birth:</strong></span>{{resume.dateOfBirth}}</p>
+    <p><span><strong>Address:</strong></span>{{resume.address}}</p>
+    <!--<input ng-model="adress">-->
+    <!--<button ng-click="changeAdress(adress)"></button>-->
+    <dl>
+        <dt><span><strong>Phone:</strong></span></dt>
+        <dd ng-repeat="phone in resume.phones" class="phones"><a href="tel:{{phone}}">{{phone}}</a></dd>
+    </dl>
+    <dl>
+        <dt><span><strong>Email addresses :</strong></span></dt>
+        <dd ng-repeat="email in resume.emails" class="emails"><a class="email" href="mailto:{{resume.email}}">{{email}}</a></dd>
+    </dl>
+    <p><span><strong>Miscellaneous:</strong></span>{{resume.miscellaneous}}</p><br>
+</section>

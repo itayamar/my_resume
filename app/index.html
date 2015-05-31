@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Resume</title>
+  <meta name="description" content="Display a resume from json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
+  <!--<link href='http://fonts.googleapis.com/css?family=Tinos:400,700&subset=latin,hebrew' rel='stylesheet' type='text/css'>-->
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <!--<base href="/my-resume/app/">-->
+</head>
+<body ng-controller="MainController">
+  <header>
+    <nav>
+      <!--<ul id="navbar">-->
+        <!--<li ng-class="{active: $location.path() == '/personal_details'}"><a href="#/personal_details">About</a></li>-->
+        <!--<li ng-class="{active: $location.path() == '/education'}"><a href="#/education">Education</a></li>-->
+        <!--<li ng-class="{active: $location.path() == '/experience'}"><a href="#/experience">Experience</a></li>-->
+      <!--</ul>-->
+      <ul id="navbar">
+        <li ng-repeat="page in pages" ng-class="{active: isActive(page)}"><a href="#{{page.path}}">{{page.title}}</a></li>
+      </ul>
+
+    </nav>
+    <h1 id="user-name">{{resume.name}} resume </h1>
+  </header>
+
+  <div class="wrapper">
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+    <div ng-view></div>
+
+    <!--<div>Angular seed app: v<span app-version></span></div>-->
+  </div> <!-- end of wrapper-->
+  <footer>
+    <a href="http://www.facebook.com/itay.n.amar"><img src="img/facebook-wrap.png" alt="Facebook logo" class="social-icon"></a>
+    <p>&copy;2015 Itay Amar .</p>
+  </footer>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.js"></script>
+  <script src="app.js"></script>
+  <script src="personal_details/personal_details.js"></script>
+  <script src="education/education.js"></script>
+  <script src="experience/experience.js"></script>
+  <script src="components/services/service.js"></script>
+  <script src="components/version/version.js"></script>  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!--<p>This is the partial for view 2.</p>-->
+<!--<p>-->
+  <!--Showing of 'interpolate' filter:-->
+  <!--{{ 'Current version is v%VERSION%.' | interpolate }}-->
+<!--</p>-->
+<section class="education">
+    <span><strong>Education:</strong></span>
+    <ul>
+        <li ng-repeat="education in resume.educations"><b>{{education.years}}:</b> {{education.studied}} at {{education.where}}</li>
+    </ul>
+    <span><strong>Academic projects:</strong></span>
+    <dl>
+        <dt ng-repeat-start="project in resume.projects"><b>{{project.name}}</b></dt>
+        <dt><b>Project description:</b></dt>
+        <dd>{{project.description}}</dd>
+        <dt><b>Development included:</b></dt>
+        <dd ng-repeat-end="">{{project.development}}</dd>
+    </dl>
+    <span><strong>Technical experience:</strong></span>
+    <dl>
+        <dt>Programing languages:</dt>
+        <dd>{{resume.progLang}}</dd>
+        <dt>Familiar with:</dt>
+        <dd>{{resume.familiarLang}}</dd>
+        </dl>
+</section>

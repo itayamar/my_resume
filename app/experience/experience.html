@@ -1,0 +1,16 @@
+<section class="experience">
+    <p><span><strong>Experience:</strong></span></p>
+    <ul>
+        <li ng-repeat="experience in resume.experience"><b>{{experience.years}}:</b> {{experience.description}}</li>
+        <dd ng-repeat-end="">{{experience.description}}</dd>
+    </ul>
+    <p><span><strong>Military:</strong></span></p>
+    <ul>
+        <li ng-repeat="military in resume.military_service"><b>{{military.years}}:</b>{{military.description}}</li>
+    </ul>
+    <p><span><strong>Volunteer:</strong></span></p>
+    <dl>
+        <dt ng-repeat-start="volunteer in resume.volunteer"><b>{{volunteer.years}}:</b>{{volunteer.where}}</dt>
+        <dd ng-repeat-end="">{{volunteer.description}}</dd>
+    </dl>
+</section>
