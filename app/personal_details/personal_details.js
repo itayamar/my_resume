@@ -9,12 +9,5 @@ angular.module('myApp.personal_details', ['ngRoute'])
   });
 }])
 
-.controller('Personal_detailsCtrl', ['$scope', 'Resume', function($scope,Resume) {
-      Resume.get().$promise.then(function(result){
-            $scope.resume=result;
-          },
-          function(err) {
-            $log.error(err);
-          }
-      );
+.controller('Personal_detailsCtrl', ['$scope', function($scope) {
 }]);

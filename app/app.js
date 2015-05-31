@@ -6,8 +6,7 @@ var myApp=angular.module('myApp', [
   'myApp.personal_details',
   'myApp.education',
   'myApp.experience',
-  'myApp.resumeServices',
-  'myApp.version'
+  'myApp.resumeServices'
 ]);
 
 myApp.config(['$routeProvider', function($routeProvider) {
