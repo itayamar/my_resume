@@ -8,6 +8,6 @@ angular.module('myApp.personal_details', ['ngRoute'])
     controller: 'Personal_detailsCtrl'
   });
 }])
-
-.controller('Personal_detailsCtrl', ['$scope', function($scope) {
-}]);
+    
+    .controller('Personal_detailsCtrl', ['$scope', function($scope) {
+    }]);

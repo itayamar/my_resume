@@ -8,16 +8,3 @@ angular.module('myApp.resumeServices', ['ngResource'])
         });
     }
 ]);
-
-//resumeServices.factory('ResumeName',function(){
-//   var resume_name=null;
-//   return{
-//       getResumeName:function(){
-//           return resume_name;
-//       },
-//       //get the resume name with out the.json
-//       setResumeName:function(fileName){
-//           resume_name=name;
-//       }
-//   };
-//});

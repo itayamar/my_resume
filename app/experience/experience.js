@@ -11,5 +11,5 @@ angular.module('myApp.experience', ['ngRoute'])
             controller: 'ExperienceCtrl'
         });
     }])
-    .controller('ExperienceCtrl', ['$scope',  function($scope) {
+    .controller('ExperienceCtrl', ['$scope', function($scope) {
     }]);

@@ -9,5 +9,5 @@ angular.module('myApp.education', ['ngRoute'])
   });
 }])
 
-.controller('EducationCtrl', ['$scope', function($scope) {
-}]);
+    .controller('EducationCtrl', ['$scope', function($scope) {
+    }]);
