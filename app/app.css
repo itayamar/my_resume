@@ -2,13 +2,15 @@
 GENERAL
 *********************************/
 
-html,body{
-    height: 100%;
-    box-sizing: border-box;
+html{
+    position: relative;
+    min-height: 100%;
 }
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0 0 80px;
 }
 
 ul {
@@ -16,11 +18,13 @@ ul {
 }
 
 .wrapper{
-    margin-top: -1.5em;
+    /*margin-top: -1.5em;*/
+    position: relative;
+    /*min-height: 100%;*/
+    height: auto;
+    /*margin-bottom: -60px;*/
     max-width: 940px;
-    min-height: 60%;
-    margin-bottom: -3.5rem;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
 }
 
 dt{
@@ -49,14 +53,9 @@ header {
 #user-name {
     text-align: center;
     margin: 0;
-    font-size: 1.4em;
-}
-
-h1{
+    font-size: 1.8em;
     font-family: 'Changa One', sans-serif; /*english*/
     /*font-family: 'Tinos', Arial, serif; /!*hebrew*!/*/
-    margin: 2em 0;
-    font-size: 1.75em;
     font-weight: normal;
     line-height: 0.8em;
 }
@@ -142,7 +141,6 @@ PAGE EDUCATION
 PAGE  EXPERIENCE
 *********************************/
 .experience li span{
-    float: left;
     margin-left: 2em;
     display: block;
 }
@@ -152,28 +150,32 @@ PAGE  EXPERIENCE
     margin-left: 5em;
 }
 
-.experience dt span{
-    margin-left: 2.8em;
-}
+/*.experience dt span{*/
+    /*margin-left: 2.8em;*/
+/*}*/
 
 /********************************
 FOOTER
 *********************************/
 
 footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    height: 4rem;
+    height: 60px;
     background-color: #c8adda;
     border-radius: 30px;
     border: 5px;
-    padding: 1em 0 0.5em;
-    margin: 4em 5px 0;
+    padding: 0.4em 0 0.5em;
+    margin: 0 5px;
 }
 
 .social-icon {
     width: 20px;
     height: 20px;
-    margin: 0 5px;
+    margin-bottom: -0.8em;
 }
 
 
@@ -205,4 +207,8 @@ a {
 
 .active a{
     color: LightSlateGray;
+}
+
+a:hover {
+    color: DarkSlateGray;
 }

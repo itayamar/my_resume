@@ -4,23 +4,29 @@
   <!--{{ 'Current version is v%VERSION%.' | interpolate }}-->
 <!--</p>-->
 <section class="education">
-    <span><strong>Education:</strong></span>
-    <ul>
-       <li ng-repeat="education in resume.educations"><b>{{education.years}}:</b><br><span>{{education.studied}} at {{education.where}}</span></li>
-    </ul>
-    <span><strong>Academic projects:</strong></span>
-    <dl>
-        <dt ng-repeat-start="project in resume.projects" class="project-name"><b>Project  in {{project.name}}</b></dt>
-        <dt><b>Project description:</b></dt>
-        <dd>{{project.description}}</dd>
-        <dt><b>Development included:</b></dt>
-        <dd ng-repeat-end="">{{project.development}}</dd>
-    </dl>
-    <span><strong>Technical experience:</strong></span>
-    <dl>
-        <dt><b>Programing languages:</b></dt>
-        <dd>{{resume.progLang}}</dd>
-        <dt><b>Familiar with:</b></dt>
-        <dd>{{resume.familiarLang}}</dd>
+    <div id="primary">
+        <span><strong>Education:</strong></span>
+        <ul>
+           <li ng-repeat="education in resume.educations"><b>{{education.years}}:</b><br><span>{{education.studied}} at {{education.where}}</span></li>
+        </ul>
+        <span><strong>Academic projects:</strong></span>
+        <dl>
+            <dt ng-repeat-start="project in resume.projects" class="project-name">
+                <b>{{project.name}} Project </b>
+            </dt>
+            <dt><b>Project description:</b></dt>
+            <dd>{{project.description}}</dd>
+            <dt><b>Development included:</b></dt>
+            <dd ng-repeat-end="">{{project.development}}</dd>
         </dl>
+    </div>
+    <div id="secondary">
+        <span><strong>Technical experience:</strong></span>
+        <dl>
+            <dt><b>Programing languages:</b></dt>
+            <dd>{{resume.progLang}}</dd>
+            <dt><b>Familiar with:</b></dt>
+            <dd>{{resume.familiarLang}}</dd>
+        </dl>
+    </div>
 </section>

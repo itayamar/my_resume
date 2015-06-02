@@ -16,6 +16,6 @@
   "military_service": [{"years": "2011-2013", "description": "Serving at the Bakum aka Bsis Klita UMiyun lit. Reception and Sorting Base"}],
   "experience":[{"years": "2009-2011", "description": "private teacher in computers, math and English"},
     {"years": "2013-2014", "description": "Promoting the sales of various products"}],
-  "volunteer": [{"years": "2010-2011", "where": "Volunteering in sachlab project", "description": "Assisting children in school "},
-    {"years": "2008-2010", "where": "Volunteering in perach project", "description": "Assisting a child with learning and personal difficulties "}]
+  "volunteer": [{"years": "2010-2011", "where": "sachlab project", "description": "Assisting children in school "},
+    {"years": "2008-2010", "where": "perach project", "description": "Assisting a child with learning and personal difficulties "}]
 }

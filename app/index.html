@@ -14,35 +14,37 @@
   <link href='http://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
   <!--<link href='http://fonts.googleapis.com/css?family=Tinos:400,700&subset=latin,hebrew' rel='stylesheet' type='text/css'>-->
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="responsive.css">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
   <!--<base href="/my-resume/app/">-->
 </head>
 <body ng-controller="MainController">
-  <header>
-    <nav>
-      <!--<ul id="navbar">-->
-        <!--<li ng-class="{active: $location.path() == '/personal_details'}"><a href="#/personal_details">About</a></li>-->
-        <!--<li ng-class="{active: $location.path() == '/education'}"><a href="#/education">Education</a></li>-->
-        <!--<li ng-class="{active: $location.path() == '/experience'}"><a href="#/experience">Experience</a></li>-->
-      <!--</ul>-->
-      <ul id="navbar">
-        <li ng-repeat="page in pages" ng-class="{active: isActive(page)}"><a href="#{{page.path}}">{{page.title}}</a></li>
-      </ul>
-
-    </nav>
-    <name-resume></name-resume>
-  </header>
-
   <div class="wrapper">
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+    <header>
+      <nav>
+        <!--<ul id="navbar">-->
+          <!--<li ng-class="{active: $location.path() == '/personal_details'}"><a href="#/personal_details">About</a></li>-->
+          <!--<li ng-class="{active: $location.path() == '/education'}"><a href="#/education">Education</a></li>-->
+          <!--<li ng-class="{active: $location.path() == '/experience'}"><a href="#/experience">Experience</a></li>-->
+        <!--</ul>-->
+        <ul id="navbar">
+          <li ng-repeat="page in pages" ng-class="{active: isActive(page)}"><a href="#{{page.path}}">{{page.title}}</a></li>
+        </ul>
+
+      </nav>
+      <name-resume></name-resume>
+    </header>
+
+
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
     <div ng-view></div>
 
     <!--<div>Angular seed app: v<span app-version></span></div>-->
   </div> <!-- end of wrapper-->
-  <footer>
+  <footer class="footer">
     <a href="http://www.facebook.com/itay.n.amar"><img src="img/facebook-wrap.png" alt="Facebook logo" class="social-icon"></a>
     <p>&copy;2015 Itay Amar .</p>
   </footer>
@@ -58,8 +60,5 @@
   <script src="experience/experience.js"></script>
   <script src="components/services/service.js"></script>
   <script src="components/directives/directive.js"></script>
-  <!--<script src="components/version/version.js"></script>  <script src="components/version/version-directive.js"></script>-->
-  <!--<script src="components/version/interpolate-filter.js"></script>-->
-
 </body>
 </html>
