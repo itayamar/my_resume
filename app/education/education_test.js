@@ -5,11 +5,12 @@ describe('myApp.education module', function() {
   beforeEach(module('myApp.education'));
 
   describe('education controller', function(){
-
-    it('should ....', inject(function($controller) {
+    var EducationCtrl, scope;
+    it('should be defined', inject(function($controller,$rootScope) {
       //spec body
-      var view2Ctrl = $controller('View2Ctrl');
-      expect(view2Ctrl).toBeDefined();
+      scope=$rootScope.$new();
+      EducationCtrl = $controller('EducationCtrl', {$scope: scope});
+      expect(EducationCtrl).toBeDefined();
     }));
 
   });

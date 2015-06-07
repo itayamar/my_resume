@@ -20,7 +20,7 @@ describe('my app', function() {
 
     it('should render personal_details when user navigates to /personal_details', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 1/);
+        toMatch(/partial for personal_details/);
     });
 
   });
@@ -28,14 +28,28 @@ describe('my app', function() {
 
   describe('education', function() {
 
+      beforeEach(function () {
+          browser.get('index.html#/education');
+      });
+
+
+      it('should render education when user navigates to /education', function () {
+          expect(element.all(by.css('[ng-view] p')).first().getText()).
+              toMatch(/partial for education/);
+      });
+  });
+
+
+  describe('experience', function() {
+
     beforeEach(function() {
-      browser.get('index.html#/education');
+      browser.get('index.html#/experience');
     });
 
 
-    it('should render education when user navigates to /education', function() {
+    it('should render education when user navigates to /experience', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 2/);
+         toMatch(/partial for experience/);
     });
 
   });
