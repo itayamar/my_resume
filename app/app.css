@@ -4,13 +4,14 @@ GENERAL
 
 html{
     position: relative;
-    min-height: 100%;
+    min-height: 98%;
 }
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     box-sizing: border-box;
     margin: 0 0 80px;
+    min-width: 300px;
 }
 
 ul {
@@ -18,14 +19,15 @@ ul {
 }
 
 .wrapper{
-    /*margin-top: -1.5em;*/
+    margin: -20px auto 0px;
     position: relative;
     /*min-height: 100%;*/
-    height: auto;
-    /*margin-bottom: -60px;*/
-    margin: auto;
-    max-width: 940px;
+    min-height: 500px;
+    /*margin-bottom: -5px;*/
+    /*margin: auto;*/
+    max-width: 1100px;
     font-size: 0.7rem;
+    overflow: hidden;
 }
 
 dt{
@@ -49,6 +51,7 @@ header {
     margin: 0 0 30px 0;
     padding: 5px 0 15px;
     width: 100% ;
+    height: 70px;
 }
 
 #user-name {
@@ -105,6 +108,12 @@ PAGE ABOUT/PERSONAL_DETAILS
     -moz-border-radius: 20%;
     border-radius: 20%;
 }
+
+.personal_details {
+    background: url("img/amazing-trees-4.jpg") no-repeat center;
+    background-size: cover;
+}
+
 .personal_details dd {
     margin-left: 5em;
 }
@@ -128,6 +137,12 @@ dd.emails a{
 /********************************
 PAGE EDUCATION
 *********************************/
+.education {
+    background: url("img/beautiful_place.jpg") no-repeat bottom;
+    background-size: cover;
+    overflow:auto;
+}
+
 .education li span {
     display: block;
     margin-left: 2em;
@@ -141,6 +156,12 @@ PAGE EDUCATION
 /********************************
 PAGE  EXPERIENCE
 *********************************/
+
+.experience {
+    background: url("img/maxresdefault.jpg") no-repeat bottom;
+    background-size: auto;
+}
+
 .experience li span{
     margin-left: 2em;
     display: block;
@@ -151,10 +172,6 @@ PAGE  EXPERIENCE
     margin-left: 5em;
 }
 
-/*.experience dt span{*/
-    /*margin-left: 2.8em;*/
-/*}*/
-
 /********************************
 FOOTER
 *********************************/
@@ -164,13 +181,14 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
+    min-width: 290px;
     text-align: center;
     height: 60px;
     background-color: #c8adda;
     border-radius: 30px;
     border: 5px;
     padding: 0.4em 0 0.5em;
-    margin: 0 5px;
+    /*margin: 0 5px;*/
 }
 
 .social-icon {
@@ -188,22 +206,39 @@ COLORS
 /* site body */
 body {
     background-color: #fff;
-    color: #7795da;
+    /*color: #7795da;*/
+    color: #fff;
 }
 
 header {
     background-color: BurlyWood;
 }
-strong{
-    color: #6b5bff;
+
+/*strong{*/
+    /*color: #6b5bff;*/
+/*}*/
+.education {
+    color: #fff;
+}
+.education b {
+    color: #4cff62;
 }
 
-b {
-    color: #4c56ff;
-}
+/*.personal_details a,.personal_details dd{*/
+    /*color: #AEBDCC;*/
+/*}*/
+
+
+/*b {*/
+    /*color: #4c56ff;*/
+/*}*/
 
 a {
     color: DimGray;
+}
+
+footer > p{
+    color: DarkSlateGray;
 }
 
 .active a{

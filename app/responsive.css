@@ -13,6 +13,13 @@
 
 @media screen and (min-width: 1024px) {
 
+    html {
+        font-size: 115%;
+    }
+    .wrapper {
+        min-height: 350px;
+        background-color: yellow;
+    }
     #primary {
         width: 50%;
         float: left;
